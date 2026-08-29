@@ -1,6 +1,6 @@
 # Portafolio Profesional - Francisco S. Tabares U.
 
-**Software Engineer | Backend & MLOps • Game Systems Developer**
+**Ingeniero Informático | Backend Development & Data Engineering**
 
 Portafolio web modular, de alto rendimiento y desacoplado, construido con **Vite**, **Vanilla JavaScript** y **Tailwind CSS**. Diseñado para desplegarse limpiamente en **GitHub Pages** mediante integración continua con GitHub Actions.
 
