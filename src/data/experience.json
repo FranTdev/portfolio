@@ -1,0 +1,50 @@
+[
+  {
+    "id": "exp-1",
+    "role": "Líder de Testing y Soluciones de Software",
+    "company": "Semillero Juego Cenigraf - SENA",
+    "period": "03/2023 - Presente",
+    "description": "Liderazgo del equipo de testing y game testing. Diseño e implementación de pruebas de software, desarrollo de soluciones de programación para la optimización de prototipos y colaboración en la arquitectura de código y control de versiones.",
+    "skills": ["Software Testing", "Game Testing", "QA & Debugging", "Software Architecture", "Unity", "Control de Versiones"]
+  },
+  {
+    "id": "exp-2",
+    "role": "Soporte TI e Infraestructura",
+    "company": "Hotel Derroches",
+    "period": "2021 - 2024",
+    "description": "Desarrollo e implementación de software de inventario personalizado con Python y SQL. Configuración, administración y segregación de redes para conectividad segura e infraestructura estable.",
+    "skills": ["Python", "SQL", "Redes & Conectividad", "Seguridad TI", "Gestión de Inventario"]
+  },
+  {
+    "id": "exp-3",
+    "role": "Instructor de Programación",
+    "company": "Compusistemas",
+    "period": "2022 - 2022",
+    "description": "Capacitaciones en fundamentos de Desarrollo Web (HTML, JavaScript, Python) y Seguridad Web. Diseño de ejercicios prácticos, material pedagógico y rúbricas de evaluación.",
+    "skills": ["HTML/CSS", "JavaScript", "Python", "Seguridad Web", "Liderazgo Técnico"]
+  },
+  {
+    "id": "edu-1",
+    "role": "Profesional en Ingeniería Informática",
+    "company": "UAO (Universidad Autónoma de Occidente)",
+    "period": "En curso (Esperado 2027)",
+    "description": "Formación profesional en ingeniería de software, arquitectura de sistemas, bases de datos y ciencia de datos.",
+    "skills": ["Ingeniería Informática", "Estructura de Datos", "Sistemas Distribuidos"]
+  },
+  {
+    "id": "edu-2",
+    "role": "Tecnólogo en Desarrollo de Videojuegos & Técnico en Sistemas",
+    "company": "SENA",
+    "period": "SENA (2019 - Presente)",
+    "description": "Tecnólogo en Desarrollo de Videojuegos (en proceso de graduación) y Técnico en Sistemas (2019).",
+    "skills": ["Desarrollo de Videojuegos", "Unity", "Sistemas & Redes"]
+  },
+  {
+    "id": "cert-1",
+    "role": "Certificaciones Profesionales",
+    "company": "Google • Correlation One • Oracle / Alura",
+    "period": "Certificados",
+    "description": "• Google Cybersecurity Professional Certificate (Google / Coursera)\n• DS4A Data Analyst Fundamentals (Correlation One)\n• Oracle + Alura Backend Developer (Alura Latam)",
+    "skills": ["Google Cybersecurity", "DS4A Data Analyst", "Oracle Backend Developer"]
+  }
+]

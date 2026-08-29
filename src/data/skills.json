@@ -1,0 +1,57 @@
+[
+  {
+    "id": "backend-apis",
+    "title": "Desarrollo Backend & APIs",
+    "icon": "terminal",
+    "variant": "primary",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "Pydantic",
+      "pytest",
+      "SQLAlchemy",
+      "SQLModel",
+      ".NET / C#",
+      "NodeJS",
+      "JavaScript",
+      "C/C++"
+    ]
+  },
+  {
+    "id": "data-engineering",
+    "title": "Bases de Datos & Data Science",
+    "icon": "database",
+    "variant": "secondary",
+    "skills": [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "SQLite",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "PyTorch"
+    ]
+  },
+  {
+    "id": "devops-infra",
+    "title": "DevOps, Nube & Herramientas",
+    "icon": "cloud_sync",
+    "variant": "neutral",
+    "skills": [
+      "Docker",
+      "Git",
+      "Linux",
+      "Microsoft Azure",
+      "Redes",
+      "Ciberseguridad",
+      "SCRUM",
+      "Prompt Engineering",
+      "Clean Code",
+      "Unity",
+      "Ingeniería de Software"
+    ]
+  }
+]

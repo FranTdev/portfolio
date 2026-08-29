@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #0f172a;
+    color: #dae2fd;
+    font-family: 'Geist', sans-serif;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom glow utility classes */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(78, 222, 163, 0.3);
+}
+
+.glow-primary-lg {
+  box-shadow: 0 0 30px rgba(78, 222, 163, 0.5);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 20px rgba(208, 188, 255, 0.3);
+}
+
+.glow-secondary-lg {
+  box-shadow: 0 0 30px rgba(208, 188, 255, 0.5);
+}

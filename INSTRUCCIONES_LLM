@@ -1,0 +1,12 @@
+# INSTRUCCIÓN PARA ANTIGRAVITY: CONSTRUCCIÓN DE PORTAFOLIO MODULAR
+
+Actúa como un Senior Frontend Engineer. Tu objetivo es generar la estructura completa de archivos, configuración y código para el portafolio profesional de Francisco Steven Tabares Ussa (Ingeniero de Software | Backend & MLOps • Game Systems Developer).
+
+## Requisitos Técnicos y Arquitectura:
+1. **Stack:** Vite + Vanilla JavaScript + Tailwind CSS.
+2. **Estructura Desacoplada:** El contenido (perfil, skills, proyectos) DEBE estar en archivos JSON dentro de `src/data/` para poder agregar o modificar proyectos sin tocar HTML.
+3. **Filtros Interactivos:** En la sección de proyectos, los botones ("All", "MLOps", "Videojuegos") deben filtrar reactivamente las tarjetas renderizadas.
+4. **Interactividad:** El botón de copiar correo debe usar la API Clipboard y mostrar el tooltip de "Copied!".
+5. **Configuración GitHub Pages:** `vite.config.js` debe incluir `base: './'` para evitar rutas rotas en GitHub Pages.
+
+Genera exactamente los siguientes archivos con su contenido completo:

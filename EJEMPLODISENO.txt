@@ -1,0 +1,41 @@
+mi-portafolio/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # Pipeline de CI/CD para compilar y desplegar a GitHub Pages
+│
+├── public/
+│   ├── favicon.ico
+│   └── assets/
+│       ├── images/                 # Capturas, banners de juegos y previews
+│       │   ├── game-preview.webp
+│       │   └── pipeline-diagram.webp
+│       └── docs/
+│           └── cv-francisco-tabares.pdf
+│
+├── src/
+│   ├── data/                       # Datos desacoplados (agrega proyectos aquí)
+│   │   ├── projects.json           # Lista de proyectos (MLOps, Unity, Híbridos)
+│   │   ├── skills.json             # Matriz técnica y arsenal
+│   │   └── experience.json         # Trayectoria y educación
+│   │
+│   ├── components/                 # Bloques modulares reutilizables
+│   │   ├── Navbar.html (o .astro)
+│   │   ├── Hero.html
+│   │   ├── SkillsGrid.html
+│   │   ├── ProjectCardMLOps.html   # Template para proyectos backend/MLOps
+│   │   ├── ProjectCardUnity.html   # Template con botón para Unity Play
+│   │   ├── Timeline.html
+│   │   ├── ContactCard.html
+│   │   └── Footer.html
+│   │
+│   ├── styles/
+│   │   └── global.css              # Fuentes Geist, JetBrains Mono y utilidades base
+│   │
+│   └── pages/ (o raíz)
+│       └── index.html              # Ensamblador principal de la landing page
+│
+├── .gitignore                      # Ignorar node_modules, .DS_Store, dist/
+├── package.json                    # Dependencias y scripts de automatización
+├── tailwind.config.js              # Tokens de diseño oscuro, colores y fuentes
+└── README.md                       # Documentación técnica del repositorio

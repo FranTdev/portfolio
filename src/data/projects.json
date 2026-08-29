@@ -1,0 +1,18 @@
+[
+  {
+    "id": "todo-api-fastapi",
+    "title": "Todo API RESTful",
+    "category": "Backend & Open Source",
+    "type": "mlops",
+    "icon": "task_alt",
+    "description": "API RESTful contenerizada para la gestión de tareas basada en FastAPI y Python, estructurada con Clean Architecture y principios de Domain-Driven Design.",
+    "highlights": [
+      "Diseño en capas de Clean Architecture (Domain, Application, Infrastructure, API).",
+      "Modelado de bases de datos relacionales estructuradas con SQLModel y persistencia sobre SQLite.",
+      "Automatización de pruebas unitarias y de integración con pytest y orquestación de servicios en entornos locales mediante Docker Compose."
+    ],
+    "tags": ["Python 3.12", "FastAPI", "SQLModel", "Clean Architecture", "Docker", "pytest", "SQLite"],
+    "repoUrl": "https://github.com/FranTdev/todo-api-fastapi",
+    "docUrl": "https://github.com/FranTdev/todo-api-fastapi#readme"
+  }
+]
