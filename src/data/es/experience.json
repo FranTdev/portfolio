@@ -42,9 +42,9 @@
   {
     "id": "cert-1",
     "role": "Certificaciones Profesionales",
-    "company": "Google • Correlation One • Oracle / Alura",
+    "company": "UTokyo • Google • Correlation One • Oracle / Alura",
     "period": "Certificados",
-    "description": "• Google Cybersecurity Professional Certificate (Google / Coursera)\n• DS4A Data Analyst Fundamentals (Correlation One)\n• Oracle + Alura Backend Developer (Alura Latam)",
-    "skills": ["Google Cybersecurity", "DS4A Data Analyst", "Oracle Backend Developer"]
+    "description": "• GCI World April 2026 – Data Science — The University of Tokyo, Matsuo-Iwasawa Laboratory (Agosto 2026 · Certificación con evaluación final aprobada)\n• Google Cybersecurity Professional Certificate (Google / Coursera)\n• DS4A Data Analyst Fundamentals (Correlation One)\n• Oracle + Alura Backend Developer (Alura Latam)",
+    "skills": ["GCI Data Science", "Google Cybersecurity", "DS4A Data Analyst", "Oracle Backend Developer"]
   }
 ]
