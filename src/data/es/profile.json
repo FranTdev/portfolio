@@ -1,0 +1,15 @@
+{
+  "name": "Francisco S. Tabares U.",
+  "role": "Ingeniero Informático",
+  "specialities": "Backend Development • Data Engineering • Machine Learning",
+  "systemStatus": "System Status: Online",
+  "availability": "Disponible para roles Backend, Data & System Design",
+  "bio": "Ingeniero Informático en formación enfocado en desarrollo Backend, Data Engineering y Machine Learning. Experiencia en diseño de APIs RESTful, modelado de bases de datos (SQL / NoSQL), automatización de pruebas y contenerización con Docker.",
+  "email": "franciscot.ussa2003@gmail.com",
+  "phone": "+57 323 789 3693",
+  "location": "Cali, Valle del Cauca, Colombia",
+  "social": {
+    "github": "https://github.com/FranTdev",
+    "linkedin": "https://www.linkedin.com/in/franciscotdev2003/"
+  }
+}

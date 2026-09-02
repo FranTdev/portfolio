@@ -1,45 +1,45 @@
-export function renderProjectsSection(projectsData) {
+export function renderProjectsSection(projectsData, uiData) {
   return `
     <section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-24 flex flex-col gap-12" id="projects">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div class="flex flex-col gap-3">
-          <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-bold tracking-tight">Proyectos Destacados</h2>
-          <p class="font-code-sm text-code-sm text-text-muted">Proyectos de código abierto y desarrollos backend.</p>
+          <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-bold tracking-tight">${uiData.projects.title}</h2>
+          <p class="font-code-sm text-code-sm text-text-muted">${uiData.projects.subtitle}</p>
         </div>
 
         <!-- Filter Tab Buttons -->
         <div class="flex bg-surface-container-low p-1.5 rounded-xl w-fit shadow-inner border border-white/5" id="project-filters">
-          <button data-filter="All" class="project-filter-btn px-6 py-2 rounded-lg bg-surface-container-highest text-primary font-label-caps text-label-caps shadow-sm transition-all font-bold">Todos</button>
-          <button data-filter="Backend" class="project-filter-btn px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">Backend</button>
-          <button data-filter="Open Source" class="project-filter-btn px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">Open Source</button>
+          <button data-filter="All" class="project-filter-btn px-6 py-2 rounded-lg bg-surface-container-highest text-primary font-label-caps text-label-caps shadow-sm transition-all font-bold">${uiData.projects.filters.all}</button>
+          <button data-filter="Backend" class="project-filter-btn px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">${uiData.projects.filters.backend}</button>
+          <button data-filter="Open Source" class="project-filter-btn px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">${uiData.projects.filters.openSource}</button>
         </div>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-bento-gap" id="projects-grid">
-        ${renderProjectCards(projectsData, 'All')}
+        ${renderProjectCards(projectsData, 'All', uiData)}
       </div>
     </section>
   `;
 }
 
-export function renderProjectCards(projectsData, activeFilter = 'All') {
+export function renderProjectCards(projectsData, activeFilter = 'All', uiData) {
   const filtered = activeFilter === 'All' 
     ? projectsData 
     : projectsData.filter(p => p.category.toLowerCase().includes(activeFilter.toLowerCase()) || activeFilter.toLowerCase().includes(p.category.toLowerCase()));
 
   if (filtered.length === 0) {
-    return `<div class="col-span-full py-12 text-center font-code-sm text-text-muted">No se encontraron proyectos para la categoría seleccionada.</div>`;
+    return `<div class="col-span-full py-12 text-center font-code-sm text-text-muted">${uiData.projects.noProjects}</div>`;
   }
 
   return filtered.map(project => {
     if (project.type === 'unity') {
-      return renderUnityCard(project);
+      return renderUnityCard(project, uiData);
     }
-    return renderMLOpsCard(project);
+    return renderMLOpsCard(project, uiData);
   }).join('');
 }
 
-function renderMLOpsCard(project) {
+function renderMLOpsCard(project, uiData) {
   const highlightsHtml = (project.highlights || []).map(h => `
     <div class="flex items-start gap-2">
       <span class="text-primary mt-0.5 font-bold">-&gt;</span>
@@ -78,13 +78,13 @@ function renderMLOpsCard(project) {
         ${project.repoUrl ? `
           <a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer" class="bg-surface-container-high text-primary font-label-caps text-label-caps px-5 py-2.5 rounded-lg hover:bg-surface-container-highest transition-colors flex items-center gap-2 font-bold">
             <span class="material-symbols-outlined text-[18px]">code</span>
-            Ver Repositorio
+            ${uiData.projects.viewRepo}
           </a>
         ` : ''}
         ${project.docUrl ? `
           <a href="${project.docUrl}" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant font-label-caps text-label-caps px-4 py-2.5 hover:text-on-surface transition-colors flex items-center gap-2">
             <span class="material-symbols-outlined text-[18px]">menu_book</span>
-            Documentación
+            ${uiData.projects.doc}
           </a>
         ` : ''}
       </div>
@@ -92,7 +92,7 @@ function renderMLOpsCard(project) {
   `;
 }
 
-function renderUnityCard(project) {
+function renderUnityCard(project, uiData) {
   const tagsHtml = (project.tags || []).map(t => `
     <span class="bg-secondary-container/20 text-secondary font-code-sm text-code-sm px-2.5 py-1 rounded border border-secondary/20">${t}</span>
   `).join('');
@@ -121,23 +121,10 @@ function renderUnityCard(project) {
           ${tagsHtml}
         </div>
 
-        ${project.sysNote ? `
-          <div class="bg-surface-container p-3.5 rounded-xl mt-2 border-l-2 border-secondary/50">
-            <p class="font-code-sm text-code-sm text-on-surface-variant">
-              <span class="text-secondary font-bold">SYS_NOTE:</span> ${project.sysNote}
-            </p>
-          </div>
-        ` : ''}
-
         <div class="flex items-center gap-4 mt-auto pt-4 border-t border-white/5">
-          ${project.demoUrl ? `
-            <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="bg-secondary text-on-secondary font-label-caps text-label-caps px-5 py-2.5 rounded-lg hover:bg-secondary-fixed transition-colors flex items-center gap-2 font-bold shadow-[0_0_15px_rgba(208,188,255,0.2)]">
-              ⚡ Demo Interactivo
-            </a>
-          ` : ''}
           ${project.repoUrl ? `
             <a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer" class="bg-surface-container-high text-on-surface font-label-caps text-label-caps px-5 py-2.5 rounded-lg hover:bg-surface-container-highest transition-colors flex items-center gap-2">
-              Código Fuente
+              ${uiData.projects.viewRepo}
             </a>
           ` : ''}
         </div>

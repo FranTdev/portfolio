@@ -1,0 +1,50 @@
+[
+  {
+    "id": "todo-api-fastapi",
+    "title": "RESTful Todo API",
+    "category": "Backend & Open Source",
+    "type": "mlops",
+    "icon": "task_alt",
+    "description": "Containerized RESTful task management API built with FastAPI and Python 3.12, architected around Clean Architecture and Domain-Driven Design principles.",
+    "highlights": [
+      "Layered Clean Architecture pattern (Domain, Application, Infrastructure, API).",
+      "Relational database modeling with SQLModel and SQLite persistence layer.",
+      "Automated unit & integration test suites using pytest and service orchestration via Docker Compose."
+    ],
+    "tags": ["Python 3.12", "FastAPI", "SQLModel", "Clean Architecture", "Docker", "pytest", "SQLite"],
+    "repoUrl": "https://github.com/FranTdev/todo-api-fastapi",
+    "docUrl": "https://github.com/FranTdev/todo-api-fastapi#readme"
+  },
+  {
+    "id": "unity-2d-backend",
+    "title": "Unity 2D Multiplayer .NET Backend Template",
+    "category": "Backend & Open Source",
+    "type": "mlops",
+    "icon": "sports_esports",
+    "description": "Enterprise C# & .NET Core boilerplate with SignalR for 2D multiplayer games and virtual spatial environments in Unity. Handles presence, movement, and spatial messaging in real time.",
+    "highlights": [
+      "Real-time WebSocket synchronization using SignalR with spatial room grouping.",
+      "Cross-platform automation scripts to extract official SignalR .NET Standard 2.1 client DLLs into Unity.",
+      "Designed with Clean Architecture, EF Core, Redis Backplane support, and Docker containerization."
+    ],
+    "tags": ["C# 13", ".NET 9", "SignalR", "ASP.NET Core", "Clean Architecture", "Docker", "Unity 6.3 LTS", "WebSockets"],
+    "repoUrl": "https://github.com/FranTdev/Unity2DBackend",
+    "docUrl": "https://github.com/FranTdev/Unity2DBackend#readme"
+  },
+  {
+    "id": "algorithms-dotnet",
+    "title": "Sorting Algorithms & Benchmarks (.NET 10)",
+    "category": "Backend & Open Source",
+    "type": "mlops",
+    "icon": "speed",
+    "description": "High-performance modular C# library in .NET 10 implementing fundamental sorting algorithms. Designed with Clean Architecture, generic constraints, xUnit unit testing, and BenchmarkDotNet memory profiling.",
+    "highlights": [
+      "Decoupled implementations of QuickSort, MergeSort, HeapSort, InsertionSort, TimSort, and BubbleSort.",
+      "CPU performance and memory allocation profiling using BenchmarkDotNet.",
+      "Exhaustive unit test suite with xUnit and FluentAssertions."
+    ],
+    "tags": ["C# 13", ".NET 10", "Clean Architecture", "xUnit", "BenchmarkDotNet", "Algorithms", "Data Structures"],
+    "repoUrl": "https://github.com/FranTdev/Algorithms",
+    "docUrl": "https://github.com/FranTdev/Algorithms#readme"
+  }
+]

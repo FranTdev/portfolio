@@ -1,4 +1,4 @@
-export function renderSkillsGrid(skillsData) {
+export function renderSkillsGrid(skillsData, uiData) {
   const cardsHtml = skillsData.map(category => {
     let colorStyles = {
       cardGlow: 'hover:shadow-[0_0_25px_rgba(78,222,163,0.15)]',
@@ -56,8 +56,8 @@ export function renderSkillsGrid(skillsData) {
     <section id="skills" class="relative w-full bg-surface-container-lowest py-24 border-y border-white/5">
       <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-12">
         <div class="flex flex-col gap-3">
-          <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-bold tracking-tight">Technical Arsenal</h2>
-          <p class="font-code-sm text-code-sm text-text-muted">&gt;&gt; system.skills.load_matrix()</p>
+          <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-bold tracking-tight">${uiData.skills.title}</h2>
+          <p class="font-code-sm text-code-sm text-text-muted">${uiData.skills.subtitle}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-bento-gap">

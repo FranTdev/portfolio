@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "exploreProjects": "Explore Projects",
+    "initiateConnection": "Initiate Connection",
+    "sysinfoCmd": "> sysinfo --full",
+    "statusOperational": "STATUS: OPERATIONAL",
+    "health": "100% HEALTH"
+  },
+  "skills": {
+    "title": "Technical Arsenal",
+    "subtitle": ">> system.skills.load_matrix()"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Open-source projects and backend engineering developments.",
+    "filters": {
+      "all": "All",
+      "backend": "Backend",
+      "openSource": "Open Source"
+    },
+    "viewRepo": "View Repository",
+    "doc": "Documentation",
+    "noProjects": "No projects found for the selected category."
+  },
+  "experience": {
+    "title": "Experience, Education & Certifications",
+    "subtitle": "Work history, academic background, and professional achievements."
+  },
+  "contact": {
+    "title": "Initiate Connection",
+    "copied": "Copied!",
+    "copyEmail": "Copy email"
+  },
+  "footer": {
+    "hosted": "Hosted on GitHub Pages • Built with Vite & Tailwind CSS",
+    "rights": "All systems operational."
+  }
+}

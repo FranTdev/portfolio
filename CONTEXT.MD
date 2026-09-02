@@ -99,6 +99,12 @@ c:/Users/FranT/Desktop/my-page/
   - [x] Creación del archivo `GITHUB_PROFILE_README.md` para el repositorio especial de GitHub (`FranTdev/FranTdev`).
   - [x] Creación de `GITHUB_ORGANIZATION_GUIDE.md` con guías de fijación de repositorios, metadatos y etiquetas.
 
+- [x] **Fase 7: Soporte Bilingüe Internacionalizado (Español / Inglés)**
+  - [x] Estructuración de datos bilingües en `src/data/es/` y `src/data/en/` (`profile`, `projects`, `skills`, `experience`, `ui`).
+  - [x] Implementación de selector de idioma `[ ES | EN ]` en `Navbar.js` con persistencia en `localStorage`.
+  - [x] Re-renderizado reactivo dinámico sin recargar la página en `src/main.js`.
+
+
 ---
 
 ## 4. REGISTRO DE DECISIONES DE DISEÑO Y ARQUITECTURA

@@ -1,4 +1,4 @@
-export function renderHero(profileData) {
+export function renderHero(profileData, uiData) {
   return `
     <section class="relative w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-16 justify-between overflow-hidden">
       <!-- Decor Background Ambient Glows -->
@@ -25,12 +25,12 @@ export function renderHero(profileData) {
 
         <div class="flex flex-wrap items-center gap-4 mt-4">
           <a href="#projects" class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-4 rounded-lg shadow-[0_0_20px_rgba(78,222,163,0.3)] hover:shadow-[0_0_30px_rgba(78,222,163,0.5)] transition-all flex items-center gap-2 font-bold">
-            Explorar Proyectos
+            ${uiData.hero.exploreProjects}
             <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
           </a>
 
           <a href="#contact" class="bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-caps text-label-caps px-8 py-4 rounded-lg hover:bg-surface-container-highest transition-all flex items-center gap-2">
-            Iniciar Conexión
+            ${uiData.hero.initiateConnection}
             <span class="material-symbols-outlined text-[18px]">terminal</span>
           </a>
         </div>
@@ -42,7 +42,7 @@ export function renderHero(profileData) {
           <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 via-primary/5 to-secondary/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700"></div>
           <div class="relative z-10 w-full h-full rounded-3xl bg-surface-card/60 border border-white/10 backdrop-blur-xl p-8 flex flex-col justify-between shadow-2xl group-hover:scale-[1.02] transition-transform duration-500">
             <div class="flex items-center justify-between border-b border-white/10 pb-4">
-              <span class="font-code-sm text-code-sm text-primary font-bold">> sysinfo --full</span>
+              <span class="font-code-sm text-code-sm text-primary font-bold">${uiData.hero.sysinfoCmd}</span>
               <span class="w-3 h-3 rounded-full bg-primary/80 shadow-[0_0_8px_rgba(78,222,163,0.8)]"></span>
             </div>
             
@@ -54,8 +54,8 @@ export function renderHero(profileData) {
             </div>
 
             <div class="pt-4 border-t border-white/10 flex items-center justify-between font-code-sm text-[11px] text-text-muted">
-              <span>STATUS: OPERATIONAL</span>
-              <span class="text-primary font-mono">100% HEALTH</span>
+              <span>${uiData.hero.statusOperational}</span>
+              <span class="text-primary font-mono">${uiData.hero.health}</span>
             </div>
           </div>
         </div>

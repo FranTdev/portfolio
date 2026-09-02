@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "exploreProjects": "Explorar Proyectos",
+    "initiateConnection": "Iniciar Conexión",
+    "sysinfoCmd": "> sysinfo --full",
+    "statusOperational": "STATUS: OPERACIONAL",
+    "health": "100% SALUD"
+  },
+  "skills": {
+    "title": "Arsenal Técnico",
+    "subtitle": ">> system.skills.load_matrix()"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Proyectos de código abierto y desarrollos backend.",
+    "filters": {
+      "all": "Todos",
+      "backend": "Backend",
+      "openSource": "Open Source"
+    },
+    "viewRepo": "Ver Repositorio",
+    "doc": "Documentación",
+    "noProjects": "No se encontraron proyectos para la categoría seleccionada."
+  },
+  "experience": {
+    "title": "Trayectoria, Educación & Certificaciones",
+    "subtitle": "Experiencia laboral, formación académica e hitos profesionales."
+  },
+  "contact": {
+    "title": "Iniciar Conexión",
+    "copied": "¡Copiado!",
+    "copyEmail": "Copiar correo"
+  },
+  "footer": {
+    "hosted": "Hosted on GitHub Pages • Built with Vite & Tailwind CSS",
+    "rights": "Todos los sistemas operacionales."
+  }
+}

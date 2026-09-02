@@ -1,4 +1,4 @@
-export function renderContactCard(profileData) {
+export function renderContactCard(profileData, uiData) {
   return `
     <section id="contact" class="w-full max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32 flex flex-col items-center">
       <div class="bg-surface-card border border-white/5 rounded-3xl p-8 md:p-12 w-full flex flex-col items-center text-center gap-8 relative overflow-hidden shadow-2xl">
@@ -10,7 +10,7 @@ export function renderContactCard(profileData) {
         </div>
 
         <div class="flex flex-col gap-4 z-10">
-          <h2 class="font-headline-xl text-3xl md:text-4xl text-on-surface font-bold">Iniciar Conexión</h2>
+          <h2 class="font-headline-xl text-3xl md:text-4xl text-on-surface font-bold">${uiData.contact.title}</h2>
           <p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto leading-relaxed">
             ${profileData.bio}
           </p>
@@ -28,13 +28,13 @@ export function renderContactCard(profileData) {
             <span class="w-2 h-4 bg-primary animate-pulse ml-1 shrink-0"></span>
           </div>
 
-          <button aria-label="Copy Email"
+          <button aria-label="${uiData.contact.copyEmail}"
                   id="copy-email-btn"
                   class="bg-surface-container p-3 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all group relative shrink-0">
             <span class="material-symbols-outlined text-[20px]">content_copy</span>
             <span id="copy-tooltip"
                   class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-highest text-primary border border-primary/30 font-label-caps text-[11px] px-3 py-1 rounded-lg opacity-0 transition-opacity whitespace-nowrap shadow-lg pointer-events-none font-bold">
-              ¡Copiado!
+              ${uiData.contact.copied}
             </span>
           </button>
         </div>

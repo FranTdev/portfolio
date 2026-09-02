@@ -1,0 +1,15 @@
+{
+  "name": "Francisco S. Tabares U.",
+  "role": "Software Engineer",
+  "specialities": "Backend Development • Data Engineering • Machine Learning",
+  "systemStatus": "System Status: Online",
+  "availability": "Available for Backend, Data & System Design roles",
+  "bio": "Software Engineering student focused on Backend Development, Data Engineering, and Machine Learning. Experienced in RESTful API design, database modeling (SQL / NoSQL), test automation, and containerization with Docker.",
+  "email": "franciscot.ussa2003@gmail.com",
+  "phone": "+57 323 789 3693",
+  "location": "Cali, Valle del Cauca, Colombia",
+  "social": {
+    "github": "https://github.com/FranTdev",
+    "linkedin": "https://www.linkedin.com/in/franciscotdev2003/"
+  }
+}

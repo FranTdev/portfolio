@@ -1,0 +1,50 @@
+[
+  {
+    "id": "exp-1",
+    "role": "Testing & Software Solutions Lead",
+    "company": "Cenigraf Game Research Group - SENA",
+    "period": "03/2023 - Present",
+    "description": "Leadership of the testing and game testing team. Design and execution of software test suites, custom programming solutions for prototype optimization, and collaboration on code architecture and version control.",
+    "skills": ["Software Testing", "Game Testing", "QA & Debugging", "Software Architecture", "Unity", "Version Control"]
+  },
+  {
+    "id": "exp-2",
+    "role": "IT Support & Infrastructure",
+    "company": "Hotel Derroches",
+    "period": "2021 - 2024",
+    "description": "Development and deployment of custom inventory software using Python and SQL. Configuration, administration, and network segmentation for secure connectivity and stable infrastructure.",
+    "skills": ["Python", "SQL", "Networking & Connectivity", "IT Security", "Inventory Management"]
+  },
+  {
+    "id": "exp-3",
+    "role": "Programming Instructor",
+    "company": "Compusistemas",
+    "period": "2022 - 2022",
+    "description": "Training in Web Development fundamentals (HTML, JavaScript, Python) and Web Security. Design of hands-on exercises, pedagogical materials, and evaluation rubrics.",
+    "skills": ["HTML/CSS", "JavaScript", "Python", "Web Security", "Technical Leadership"]
+  },
+  {
+    "id": "edu-1",
+    "role": "B.S. in Computer Engineering",
+    "company": "UAO (Universidad Autónoma de Occidente)",
+    "period": "In Progress (Expected 2027)",
+    "description": "Academic degree in software engineering, system architecture, database design, and data science.",
+    "skills": ["Computer Engineering", "Data Structures", "Distributed Systems"]
+  },
+  {
+    "id": "edu-2",
+    "role": "Associate Degree in Game Development & Systems Tech",
+    "company": "SENA",
+    "period": "SENA (2019 - Present)",
+    "description": "Associate Degree in Game Development (graduation in progress) and Systems Technician (2019).",
+    "skills": ["Game Development", "Unity", "Systems & Networking"]
+  },
+  {
+    "id": "cert-1",
+    "role": "Professional Certifications",
+    "company": "Google • Correlation One • Oracle / Alura",
+    "period": "Certified",
+    "description": "• Google Cybersecurity Professional Certificate (Google / Coursera)\n• DS4A Data Analyst Fundamentals (Correlation One)\n• Oracle + Alura Backend Developer (Alura Latam)",
+    "skills": ["Google Cybersecurity", "DS4A Data Analyst", "Oracle Backend Developer"]
+  }
+]

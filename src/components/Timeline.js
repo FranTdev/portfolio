@@ -1,4 +1,4 @@
-export function renderTimeline(experienceData) {
+export function renderTimeline(experienceData, uiData) {
   const itemsHtml = experienceData.map((item, index) => {
     const isLast = index === experienceData.length - 1;
     const skillsHtml = (item.skills || []).map(skill => `
@@ -48,8 +48,8 @@ export function renderTimeline(experienceData) {
   return `
     <section id="experience" class="w-full max-w-5xl mx-auto px-margin-mobile md:px-margin-desktop py-24 flex flex-col gap-12">
       <div class="flex flex-col gap-3">
-        <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-bold tracking-tight">Trayectoria, Educación & Certificaciones</h2>
-        <p class="font-code-sm text-code-sm text-text-muted">Experiencia laboral, formación académica e hitos profesionales.</p>
+        <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface font-bold tracking-tight">${uiData.experience.title}</h2>
+        <p class="font-code-sm text-code-sm text-text-muted">${uiData.experience.subtitle}</p>
       </div>
 
       <div class="flex flex-col">
