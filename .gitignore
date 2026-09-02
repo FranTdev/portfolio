@@ -21,3 +21,8 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# GitHub Profile Setup Docs (non-portfolio)
+GITHUB_ORGANIZATION_GUIDE.md
+GITHUB_PROFILE_README.md
+

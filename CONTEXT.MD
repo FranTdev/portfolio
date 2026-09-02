@@ -93,6 +93,12 @@ c:/Users/FranT/Desktop/my-page/
   - [x] Pruebas de compilación exitosas (`npm run build`).
   - [x] Verificación interactiva en navegador (`http://localhost:4173/`).
 
+- [x] **Fase 6: Integración de Repositorios Públicos y Organización de Perfil de GitHub**
+  - [x] Adición del repositorio `Algorithms` (.NET 10 Sorting & Benchmarks) en `src/data/projects.json`.
+  - [x] Adición del repositorio `Unity2DBackend` (.NET 9 & SignalR 2D Multiplayer Template) en `src/data/projects.json`.
+  - [x] Creación del archivo `GITHUB_PROFILE_README.md` para el repositorio especial de GitHub (`FranTdev/FranTdev`).
+  - [x] Creación de `GITHUB_ORGANIZATION_GUIDE.md` con guías de fijación de repositorios, metadatos y etiquetas.
+
 ---
 
 ## 4. REGISTRO DE DECISIONES DE DISEÑO Y ARQUITECTURA
@@ -100,3 +106,4 @@ c:/Users/FranT/Desktop/my-page/
 - **Glow & Gradient Utilities:** Uso de utilidades Tailwind personalizadas en `tailwind.config.js` para replicar exactamente las sombras neón (`rgba(78,222,163,0.3)` y `rgba(208,188,255,0.3)`).
 - **Clipboard API Standard:** Uso de `navigator.clipboard.writeText` con tooltip animado "Copied!".
 - **Single Page Application (SPA) modular:** Uso de JavaScript Vanilla moderno con importación ESM nativa en Vite.
+
