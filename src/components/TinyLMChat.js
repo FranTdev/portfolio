@@ -201,15 +201,36 @@ export function setupTinyLMListeners(uiData) {
   }
 
   async function checkHealth() {
-    try {
-      const ctrl = new AbortController();
-      const id = setTimeout(() => ctrl.abort(), 7000);
-      const res = await fetch(HEALTH_ENDPOINT, { signal: ctrl.signal });
-      clearTimeout(id);
-      return res.ok;
-    } catch {
+    const isHttpsPage = window.location.protocol === 'https:';
+    const isHttpApi = TINYLM_BASE.startsWith('http:');
+
+    if (isHttpsPage && isHttpApi) {
+      console.warn('[TinyLM] Bloqueo de Contenido Mixto (Mixed Content): La página corre en HTTPS pero la API usa HTTP. El navegador bloqueará las peticiones.');
+      const errBox = document.querySelector('#tinylm-offline .bg-surface-main');
+      if (errBox) {
+        errBox.innerHTML = `
+          <div><span class="text-[#ff5f57]">ERR_MIXED_CONTENT</span> &nbsp;https_to_http_blocked</div>
+          <div class="mt-1 text-text-muted/70">GitHub Pages (HTTPS) no permite llamar APIs en HTTP sin SSL. Se requiere proxy HTTPS o tunnel SSL en la VM.</div>
+        `;
+      }
       return false;
     }
+
+    // Reintento de salud (hasta 2 intentos)
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      try {
+        const ctrl = new AbortController();
+        const id = setTimeout(() => ctrl.abort(), 8000);
+        const res = await fetch(HEALTH_ENDPOINT, { signal: ctrl.signal });
+        clearTimeout(id);
+        if (res.ok) return true;
+      } catch (err) {
+        console.error(`[TinyLM] Intento ${attempt} de conexión a ${HEALTH_ENDPOINT} falló:`, err);
+        if (attempt < 2) await new Promise(r => setTimeout(r, 1000));
+      }
+    }
+
+    return false;
   }
 
   async function runWarmup() {
