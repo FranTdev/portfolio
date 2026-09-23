@@ -14,6 +14,7 @@ import uiEn from './data/en/ui.json';
 
 import { renderNavbar } from './components/Navbar.js';
 import { renderHero } from './components/Hero.js';
+import { renderTinyLMChat, setupTinyLMListeners } from './components/TinyLMChat.js';
 import { renderSkillsGrid } from './components/SkillsGrid.js';
 import { renderProjectsSection, renderProjectCards } from './components/ProjectsSection.js';
 import { renderTimeline } from './components/Timeline.js';
@@ -50,6 +51,7 @@ function initApp() {
     <main class="w-full pt-16">
       <div class="flex flex-col w-full">
         ${renderHero(data.profile, data.ui)}
+        ${renderTinyLMChat(data.ui)}
         ${renderSkillsGrid(data.skills, data.ui)}
         ${renderProjectsSection(data.projects, data.ui)}
         ${renderTimeline(data.experience, data.ui)}
@@ -63,6 +65,7 @@ function initApp() {
   setupLanguageSwitcherListeners();
   setupProjectFilterListeners(data.projects, data.ui);
   setupCopyEmailListener();
+  setupTinyLMListeners(data.ui);
 }
 
 function setupLanguageSwitcherListeners() {

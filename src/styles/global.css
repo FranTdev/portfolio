@@ -46,3 +46,17 @@
 .glow-secondary-lg {
   box-shadow: 0 0 30px rgba(208, 188, 255, 0.5);
 }
+
+/* TinyLM Chat — Hide inner scrollbar */
+#tinylm-messages {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#tinylm-messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* TinyLM — Terminal window border glow on focus-within */
+#tinylm-window:focus-within {
+  box-shadow: 0 0 0 1px rgba(78, 222, 163, 0.15), 0 0 30px rgba(78, 222, 163, 0.07);
+}

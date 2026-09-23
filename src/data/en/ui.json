@@ -40,5 +40,37 @@
   "footer": {
     "hosted": "Hosted on GitHub Pages • Built with Vite & Tailwind CSS",
     "rights": "All systems operational."
+  },
+  "tinylm": {
+    "title": "TinyLM — Live Chat",
+    "subtitle": ">> tinylm.connect() • Local model deployed on own server",
+    "statusChecking": "CHECKING...",
+    "statusOnline": "ONLINE",
+    "statusOffline": "NO CONNECTION",
+    "statusStreaming": "GENERATING...",
+    "loading": {
+      "connecting": "Establishing connection...",
+      "step0": "Initializing network protocol...",
+      "step1": "Handshake with server...",
+      "step2": "Loading model context...",
+      "step3": "Checking availability...",
+      "step4": "Ready! Model operational."
+    },
+    "offline": {
+      "title": "SERVER NOT CONNECTED",
+      "serverAddr": "Server",
+      "hint": "The inference server is not available at this time.",
+      "errorDetail": "Connection timeout — server did not respond.",
+      "retry": "Retry Connection"
+    },
+    "chat": {
+      "welcome": "Hi, I'm TinyLM (Qwen2.5 1.5B). I'm running on Francisco's server. How can I help you?",
+      "placeholder": "Type a message...",
+      "you": "You",
+      "model": "Model",
+      "errorResponse": "[Error getting response from server]",
+      "emptyResponse": "[Empty response]"
+    },
+    "footnote": "TinyLM runs on own infrastructure • Models may be offline at any time"
   }
 }

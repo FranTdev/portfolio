@@ -40,5 +40,37 @@
   "footer": {
     "hosted": "Hosted on GitHub Pages • Built with Vite & Tailwind CSS",
     "rights": "Todos los sistemas operacionales."
+  },
+  "tinylm": {
+    "title": "TinyLM — Chat en Vivo",
+    "subtitle": ">> tinylm.connect() • Modelo local desplegado en servidor propio",
+    "statusChecking": "VERIFICANDO...",
+    "statusOnline": "EN LÍNEA",
+    "statusOffline": "SIN CONEXIÓN",
+    "statusStreaming": "GENERANDO...",
+    "loading": {
+      "connecting": "Estableciendo conexión...",
+      "step0": "Iniciando protocolo de red...",
+      "step1": "Handshake con el servidor...",
+      "step2": "Cargando contexto del modelo...",
+      "step3": "Verificando disponibilidad...",
+      "step4": "¡Listo! Modelo operativo."
+    },
+    "offline": {
+      "title": "SERVIDOR NO CONECTADO",
+      "serverAddr": "Servidor",
+      "hint": "El servidor de inferencia no está disponible en este momento.",
+      "errorDetail": "Tiempo de espera agotado — el servidor no responde.",
+      "retry": "Reintentar Conexión"
+    },
+    "chat": {
+      "welcome": "Hola, soy TinyLM (Qwen2.5 1.5B). Estoy corriendo en el servidor de Francisco. ¿En qué puedo ayudarte?",
+      "placeholder": "Escribe un mensaje...",
+      "you": "Tú",
+      "model": "Modelo",
+      "errorResponse": "[Error al obtener respuesta del servidor]",
+      "emptyResponse": "[Respuesta vacía]"
+    },
+    "footnote": "TinyLM corre en infraestructura propia • Los modelos pueden estar offline en cualquier momento"
   }
 }
