@@ -2,7 +2,7 @@
 // Endpoint: POST /api/chat  |  Formato: { message, stream }  |  SSE: data: {"text": "..."}
 
 // URL directa del servidor TinyLM (Azure VM)
-const TINYLM_BASE = 'http://20.80.43.199:8000';
+const TINYLM_BASE = 'https://between-describe-ports-gsm.trycloudflare.com';
 const CHAT_ENDPOINT = `${TINYLM_BASE}/api/chat`;
 const HEALTH_ENDPOINT = `${TINYLM_BASE}/health`;
 
@@ -139,14 +139,14 @@ export function setupTinyLMListeners(uiData) {
   let isStreaming = false;
 
   // Elementos del DOM
-  const loadingEl     = document.getElementById('tinylm-loading');
-  const offlineEl     = document.getElementById('tinylm-offline');
-  const chatEl        = document.getElementById('tinylm-chat');
-  const messagesEl    = document.getElementById('tinylm-messages');
-  const inputEl       = document.getElementById('tinylm-input');
-  const sendBtn       = document.getElementById('tinylm-send-btn');
-  const retryBtn      = document.getElementById('tinylm-retry-btn');
-  const progressBar   = document.getElementById('tinylm-progress-bar');
+  const loadingEl = document.getElementById('tinylm-loading');
+  const offlineEl = document.getElementById('tinylm-offline');
+  const chatEl = document.getElementById('tinylm-chat');
+  const messagesEl = document.getElementById('tinylm-messages');
+  const inputEl = document.getElementById('tinylm-input');
+  const sendBtn = document.getElementById('tinylm-send-btn');
+  const retryBtn = document.getElementById('tinylm-retry-btn');
+  const progressBar = document.getElementById('tinylm-progress-bar');
   const progressLabel = document.getElementById('tinylm-progress-label');
 
   if (!loadingEl) return;
@@ -282,19 +282,19 @@ export function setupTinyLMListeners(uiData) {
   }
 
   function setStatus(state, label) {
-    const dot  = document.getElementById('tinylm-status-dot');
+    const dot = document.getElementById('tinylm-status-dot');
     const text = document.getElementById('tinylm-status-text');
     if (!dot || !text) return;
     text.textContent = label;
     dot.className = 'w-2 h-2 rounded-full ';
-    if (state === 'online')    dot.className += 'bg-primary shadow-[0_0_6px_rgba(78,222,163,0.8)] animate-pulse';
+    if (state === 'online') dot.className += 'bg-primary shadow-[0_0_6px_rgba(78,222,163,0.8)] animate-pulse';
     else if (state === 'offline') dot.className += 'bg-[#ff5f57]';
-    else                       dot.className += 'bg-text-muted animate-pulse';
+    else dot.className += 'bg-text-muted animate-pulse';
   }
 
   function enableInput() {
-    if (inputEl)  { inputEl.disabled = false; inputEl.focus(); }
-    if (sendBtn)  sendBtn.disabled = false;
+    if (inputEl) { inputEl.disabled = false; inputEl.focus(); }
+    if (sendBtn) sendBtn.disabled = false;
   }
 
   function disableInput() {
@@ -453,6 +453,6 @@ export function setupTinyLMListeners(uiData) {
   }
 
   function escapeHtml(s) {
-    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 }
