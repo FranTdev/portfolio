@@ -42,35 +42,34 @@
     "rights": "Todos los sistemas operacionales."
   },
   "tinylm": {
-    "title": "TinyLM — Chat en Vivo",
-    "subtitle": ">> tinylm.connect() • Modelo local desplegado en servidor propio",
-    "statusChecking": "VERIFICANDO...",
+    "title": "Francisco AI — Chat en Vivo",
+    "subtitle": ">> agent.connect() • Agente IA corriendo en infraestructura propia",
+    "statusChecking": "CONECTANDO...",
     "statusOnline": "EN LÍNEA",
     "statusOffline": "SIN CONEXIÓN",
     "statusStreaming": "GENERANDO...",
     "loading": {
-      "connecting": "Estableciendo conexión...",
+      "connecting": "Iniciando conexión con el agente...",
       "step0": "Iniciando protocolo de red...",
-      "step1": "Handshake con el servidor...",
-      "step2": "Cargando contexto del modelo...",
-      "step3": "Verificando disponibilidad...",
-      "step4": "¡Listo! Modelo operativo."
+      "step1": "Estableciendo sesión segura...",
+      "step2": "Cargando contexto del agente...",
+      "step3": "Calentando el modelo...",
+      "step4": "¡Conectado! Preparando respuesta..."
     },
     "offline": {
-      "title": "SERVIDOR NO CONECTADO",
-      "serverAddr": "Servidor",
+      "title": "AGENTE NO DISPONIBLE",
       "hint": "El servidor de inferencia no está disponible en este momento.",
-      "errorDetail": "Tiempo de espera agotado — el servidor no responde.",
+      "errorDetail": "El agente podría estar apagado o en mantenimiento.",
       "retry": "Reintentar Conexión"
     },
     "chat": {
-      "welcome": "Hola, soy TinyLM (Qwen2.5 1.5B). Estoy corriendo en el servidor de Francisco. ¿En qué puedo ayudarte?",
-      "placeholder": "Escribe un mensaje...",
+      "welcome": "Hola, soy el agente IA de Francisco. ¿En qué puedo ayudarte?",
+      "placeholder": "Escribe tu pregunta...",
       "you": "Tú",
-      "model": "Modelo",
-      "errorResponse": "[Error al obtener respuesta del servidor]",
-      "emptyResponse": "[Respuesta vacía]"
+      "poweredBy": "Francisco Tabares — AI Agent",
+      "errorResponse": "[Error al obtener respuesta. Intenta de nuevo.]",
+      "emptyResponse": "[Sin respuesta]"
     },
-    "footnote": "TinyLM corre en infraestructura propia • Los modelos pueden estar offline en cualquier momento"
+    "footnote": "Agente IA corriendo en infraestructura propia • Puede estar offline en mantenimiento"
   }
 }

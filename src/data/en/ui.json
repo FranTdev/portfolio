@@ -42,35 +42,34 @@
     "rights": "All systems operational."
   },
   "tinylm": {
-    "title": "TinyLM — Live Chat",
-    "subtitle": ">> tinylm.connect() • Local model deployed on own server",
-    "statusChecking": "CHECKING...",
+    "title": "Francisco AI — Live Chat",
+    "subtitle": ">> agent.connect() • AI agent running on own infrastructure",
+    "statusChecking": "CONNECTING...",
     "statusOnline": "ONLINE",
     "statusOffline": "NO CONNECTION",
     "statusStreaming": "GENERATING...",
     "loading": {
-      "connecting": "Establishing connection...",
+      "connecting": "Initializing agent connection...",
       "step0": "Initializing network protocol...",
-      "step1": "Handshake with server...",
-      "step2": "Loading model context...",
-      "step3": "Checking availability...",
-      "step4": "Ready! Model operational."
+      "step1": "Establishing secure session...",
+      "step2": "Loading agent context...",
+      "step3": "Warming up model...",
+      "step4": "Connected! Preparing response..."
     },
     "offline": {
-      "title": "SERVER NOT CONNECTED",
-      "serverAddr": "Server",
+      "title": "AGENT UNAVAILABLE",
       "hint": "The inference server is not available at this time.",
-      "errorDetail": "Connection timeout — server did not respond.",
+      "errorDetail": "Agent may be offline or under maintenance.",
       "retry": "Retry Connection"
     },
     "chat": {
-      "welcome": "Hi, I'm TinyLM (Qwen2.5 1.5B). I'm running on Francisco's server. How can I help you?",
-      "placeholder": "Type a message...",
+      "welcome": "Hi, I'm Francisco's AI agent. How can I help you?",
+      "placeholder": "Type your question...",
       "you": "You",
-      "model": "Model",
-      "errorResponse": "[Error getting response from server]",
+      "poweredBy": "Francisco Tabares — AI Agent",
+      "errorResponse": "[Error getting response. Please try again.]",
       "emptyResponse": "[Empty response]"
     },
-    "footnote": "TinyLM runs on own infrastructure • Models may be offline at any time"
+    "footnote": "AI Agent running on own infrastructure • May be offline during maintenance"
   }
 }

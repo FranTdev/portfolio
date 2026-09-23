@@ -26,7 +26,9 @@ Thumbs.db
 GITHUB_ORGANIZATION_GUIDE.md
 GITHUB_PROFILE_README.md
 
-# Code Examples
+# Private/reference files — should not be in public repo
 CODIGOEJEMPLO.html
-
-
+CODIGOEJEMPLO.HTML
+CONTEXT.MD
+INSTRUCCIONES_LLM
+EJEMPLODISENO.txt
