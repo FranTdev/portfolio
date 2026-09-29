@@ -8,10 +8,11 @@ export function renderProjectsSection(projectsData, uiData) {
         </div>
 
         <!-- Filter Tab Buttons -->
-        <div class="flex bg-surface-container-low p-1.5 rounded-xl w-fit shadow-inner border border-white/5" id="project-filters">
-          <button data-filter="All" class="project-filter-btn px-6 py-2 rounded-lg bg-surface-container-highest text-primary font-label-caps text-label-caps shadow-sm transition-all font-bold">${uiData.projects.filters.all}</button>
-          <button data-filter="Backend" class="project-filter-btn px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">${uiData.projects.filters.backend}</button>
-          <button data-filter="Open Source" class="project-filter-btn px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">${uiData.projects.filters.openSource}</button>
+        <div class="flex flex-wrap bg-surface-container-low p-1.5 rounded-xl w-fit shadow-inner border border-white/5" id="project-filters">
+          <button data-filter="All" class="project-filter-btn px-5 py-2 rounded-lg bg-surface-container-highest text-primary font-label-caps text-label-caps shadow-sm transition-all font-bold">${uiData.projects.filters.all}</button>
+          <button data-filter="Backend" class="project-filter-btn px-5 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">${uiData.projects.filters.backend}</button>
+          <button data-filter="IA" class="project-filter-btn px-5 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">${uiData.projects.filters.ai || 'IA & MLOps'}</button>
+          <button data-filter="Open Source" class="project-filter-btn px-5 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps transition-colors">${uiData.projects.filters.openSource}</button>
         </div>
       </div>
 
@@ -25,7 +26,12 @@ export function renderProjectsSection(projectsData, uiData) {
 export function renderProjectCards(projectsData, activeFilter = 'All', uiData) {
   const filtered = activeFilter === 'All' 
     ? projectsData 
-    : projectsData.filter(p => p.category.toLowerCase().includes(activeFilter.toLowerCase()) || activeFilter.toLowerCase().includes(p.category.toLowerCase()));
+    : projectsData.filter(p => {
+        const f = activeFilter.toLowerCase();
+        const cat = (p.category || '').toLowerCase();
+        const tags = (p.tags || []).map(t => t.toLowerCase());
+        return cat.includes(f) || f.includes(cat) || tags.some(t => t.includes(f) || (f === 'ia' && (t.includes('ai') || t.includes('llm') || t.includes('ml'))));
+      });
 
   if (filtered.length === 0) {
     return `<div class="col-span-full py-12 text-center font-code-sm text-text-muted">${uiData.projects.noProjects}</div>`;

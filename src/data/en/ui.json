@@ -22,6 +22,7 @@
     "filters": {
       "all": "All",
       "backend": "Backend",
+      "ai": "AI & MLOps",
       "openSource": "Open Source"
     },
     "viewRepo": "View Repository",
