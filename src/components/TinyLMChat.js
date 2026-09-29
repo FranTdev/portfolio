@@ -2,7 +2,7 @@
 // Endpoint: POST /api/chat  |  Formato: { message, stream }  |  SSE: data: {"text": "..."}
 
 // URL directa del servidor TinyLM (Azure VM)
-const TINYLM_BASE = 'https://barrier-species-korean-teams.trycloudflare.com ';
+const TINYLM_BASE = 'https://barrier-species-korean-teams.trycloudflare.com';
 const CHAT_ENDPOINT = `${TINYLM_BASE}/api/chat`;
 const HEALTH_ENDPOINT = `${TINYLM_BASE}/health`;
 
