@@ -1,50 +1,50 @@
 [
   {
     "id": "exp-1",
-    "role": "Líder de Testing y Soluciones de Software",
-    "company": "Semillero Juego Cenigraf - SENA",
-    "period": "03/2023 - Presente",
-    "description": "Liderazgo del equipo de testing y game testing. Diseño e implementación de pruebas de software, desarrollo de soluciones de programación para la optimización de prototipos y colaboración en la arquitectura de código y control de versiones.",
-    "skills": ["Software Testing", "Game Testing", "QA & Debugging", "Software Architecture", "Unity", "Control de Versiones"]
+    "role": "Lead QA & Security Tester",
+    "company": "Semillero de Investigación SENA (Cenigraf)",
+    "period": "03/2026 - Presente",
+    "description": "Pruebas de Seguridad (Security Testing): Evaluación de vulnerabilidades y pruebas de seguridad en componentes de videojuegos web para identificar y mitigar riesgos como XSS e inyecciones SQL (OWASP Top 10). Aseguramiento de Calidad (QA): Liderazgo del ciclo de vida de QA asegurando la confiabilidad del software mediante pruebas funcionales y de rendimiento. Documentación técnica e informes de evaluación de riesgos alineados con estándares de investigación y ciberseguridad.",
+    "skills": ["Security Testing", "OWASP Top 10", "Vulnerability Assessment", "Quality Assurance (QA)", "Documentación Técnica", "Unity", "Control de Versiones"]
   },
   {
     "id": "exp-2",
-    "role": "Soporte TI e Infraestructura",
+    "role": "Soporte TI e Infraestructura de Redes",
     "company": "Hotel Derroches",
     "period": "2021 - 2024",
-    "description": "Desarrollo e implementación de software de inventario personalizado con Python y SQL. Configuración, administración y segregación de redes para conectividad segura e infraestructura estable.",
-    "skills": ["Python", "SQL", "Redes & Conectividad", "Seguridad TI", "Gestión de Inventario"]
+    "description": "Mantenimiento de infraestructura tecnológica estable y segura, enfocado en la confiabilidad de la red y la protección de endpoints. Configuración y segregación de redes para asegurar conectividad segura entre departamentos. Desarrollo de software de inventario personalizado con Python y SQL, supervisión del ciclo de despliegue de software y análisis de datos financieros.",
+    "skills": ["Python", "SQL", "Segregación de Redes", "Endpoint Protection", "Seguridad TI", "Análisis Financiero", "Gestión de Inventario"]
   },
   {
     "id": "exp-3",
-    "role": "Instructor de Programación",
+    "role": "Instructor de Programación & Ciberseguridad Web",
     "company": "Compusistemas",
-    "period": "2022 - 2022",
-    "description": "Capacitaciones en fundamentos de Desarrollo Web (HTML, JavaScript, Python) y Seguridad Web. Diseño de ejercicios prácticos, material pedagógico y rúbricas de evaluación.",
-    "skills": ["HTML/CSS", "JavaScript", "Python", "Seguridad Web", "Liderazgo Técnico"]
+    "period": "01/2022 - 07/2022",
+    "description": "Liderazgo en capacitaciones técnicas para grupos de más de 20 estudiantes en el ciclo de vida del desarrollo de software (SDLC) y prácticas de código seguro. Instrucción técnica en HTML, CSS, JavaScript y Python. Desarrollo e impartición de módulo especializado en fundamentos de Ciberseguridad Web, mitigación de vulnerabilidades comunes y evaluación práctica.",
+    "skills": ["Python", "Ciberseguridad Web", "Código Seguro (SDLC)", "JavaScript", "HTML/CSS", "Liderazgo Técnico"]
   },
   {
     "id": "edu-1",
-    "role": "Profesional en Ingeniería Informática",
-    "company": "UAO (Universidad Autónoma de Occidente)",
-    "period": "En curso (Esperado 2027)",
-    "description": "Formación profesional en ingeniería de software, arquitectura de sistemas, bases de datos y ciencia de datos.",
-    "skills": ["Ingeniería Informática", "Estructura de Datos", "Sistemas Distribuidos"]
+    "role": "Ingeniería de Sistemas (Ciberseguridad & Arquitectura)",
+    "company": "Universidad Autónoma de Occidente (UAO)",
+    "period": "10/2021 - 10/2026 (En curso - 9º Semestre | GPA 4.2/5.0)",
+    "description": "Formación enfocada en Ciberseguridad, Forense Digital y Arquitectura de Sistemas Seguros (90% de créditos completados). Formación avanzada en Seguridad de la Información (ISO 27001, gestión de riesgos, criptografía), Forense Digital (cadena de custodia, análisis de logs e investigación de incidentes) y Hardening de Redes/Infraestructura (TCP/IP).",
+    "skills": ["Ingeniería de Sistemas", "Ciberseguridad", "Forense Digital", "ISO 27001", "Hardening de Redes", "TCP/IP", "Análisis de Logs"]
   },
   {
     "id": "edu-2",
     "role": "Tecnólogo en Desarrollo de Videojuegos & Técnico en Sistemas",
-    "company": "SENA",
-    "period": "SENA (2019 - Presente)",
-    "description": "Tecnólogo en Desarrollo de Videojuegos (en proceso de graduación) y Técnico en Sistemas (2019).",
-    "skills": ["Desarrollo de Videojuegos", "Unity", "Sistemas & Redes"]
+    "company": "Servicio Nacional de Aprendizaje (SENA)",
+    "period": "2017 - 2027",
+    "description": "Tecnólogo en Desarrollo de Videojuegos (2024 - 2027 | Galardonado con Excelencia Académica, Monitor Académico, Integración de Ciberseguridad en el SDLC). Técnico en Instalación y Reparación de Sistemas de Cómputo (2017 - 2019 | Configuración LAN, cableado estructurado y hardening de SO).",
+    "skills": ["Desarrollo de Videojuegos", "Unity", "Integración Ciberseguridad SDLC", "Infraestructura LAN", "Hardening SO"]
   },
   {
     "id": "cert-1",
-    "role": "Certificaciones Profesionales",
-    "company": "UTokyo • Google • Correlation One • Oracle / Alura",
-    "period": "Certificados",
-    "description": "• GCI World April 2026 – Data Science — The University of Tokyo, Matsuo-Iwasawa Laboratory (Agosto 2026 · Certificación con evaluación final aprobada)\n• Google Cybersecurity Professional Certificate (Google / Coursera)\n• DS4A Data Analyst Fundamentals (Correlation One)\n• Oracle + Alura Backend Developer (Alura Latam)",
-    "skills": ["GCI Data Science", "Google Cybersecurity", "DS4A Data Analyst", "Oracle Backend Developer"]
+    "role": "Licencias & Certificaciones Profesionales",
+    "company": "Google • UTokyo • Correlation One • Oracle / Alura",
+    "period": "Certificados Oficiales",
+    "description": "• Programa Especializado: Ciberseguridad de Google (Certificado Profesional: Automatización con Python, Detección y Respuesta, Linux & SQL, Activos/Amenazas/Vulnerabilidades, Redes y Gestión de Riesgos)\n• GCI World April 2026 – Data Science & ML — The University of Tokyo (Matsuo-Iwasawa Lab, Ago 2026)\n• DS4A Fundamentos en Analítica de Datos — Correlation One\n• Oracle Next Education (ONE) – Back-end Developer & Formación Java / Spring Boot — Alura Latam",
+    "skills": ["Google Cybersecurity Professional", "GCI Data Science", "DS4A Data Analyst", "Oracle Backend Developer", "Python", "Linux & SQL"]
   }
 ]

@@ -1,13 +1,13 @@
 {
   "name": "Francisco S. Tabares U.",
-  "role": "Computer Engineer",
-  "specialities": "Backend Development • Data Engineering • Machine Learning",
-  "systemStatus": "System Status: Online",
-  "availability": "Available for Backend, Data & System Design roles",
-  "bio": "Computer Engineering student focused on Backend Development, Data Engineering, and Machine Learning. Experienced in RESTful API design, database modeling (SQL / NoSQL), test automation, and containerization with Docker.",
+  "role": "Backend Developer | Cloud Architect | Cybersecurity | DevOps",
+  "specialities": "Backend Development (Python / .NET / Java) • Cybersecurity & OWASP Top 10 • Cloud Architecture (Azure & AWS) • DevSecOps & CI/CD",
+  "systemStatus": "System Status: Operational • Security Hardened",
+  "availability": "Available for Backend, Cybersecurity, Cloud & DevOps roles",
+  "bio": "Backend Developer with strong knowledge of architectural patterns, OWASP Top 10, databases, Docker, Cybersecurity, DevOps, and Cloud solutions with Azure and AWS. Committed to security from code to production deployment. Experienced in security testing, automated QA pipelines, and mitigating vulnerabilities or issues stemming from AI usage.",
   "email": "franciscot.ussa2003@gmail.com",
   "phone": "+57 323 789 3693",
-  "location": "Cali, Valle del Cauca, Colombia",
+  "location": "Bogota / Cali, Colombia",
   "social": {
     "github": "https://github.com/FranTdev",
     "linkedin": "https://www.linkedin.com/in/franciscotdev2003/"

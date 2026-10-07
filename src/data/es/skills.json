@@ -1,7 +1,7 @@
 [
   {
-    "id": "backend-apis",
-    "title": "Desarrollo Backend & APIs",
+    "id": "backend-cloud",
+    "title": "Backend Development & Cloud Architecture",
     "icon": "terminal",
     "variant": "primary",
     "skills": [
@@ -9,49 +9,60 @@
       "FastAPI",
       "Flask",
       "REST APIs",
-      "Pydantic",
-      "pytest",
-      "SQLAlchemy",
-      "SQLModel",
-      ".NET / C#",
-      "NodeJS",
-      "JavaScript",
-      "C/C++"
+      "C# / .NET 9",
+      "Java / Spring Boot",
+      "SQLModel / Pydantic",
+      "Microsoft Azure",
+      "Amazon Web Services (AWS)",
+      "Clean Architecture & DDD"
     ]
   },
   {
-    "id": "data-engineering",
-    "title": "Bases de Datos & Data Science",
-    "icon": "database",
+    "id": "cybersecurity-devsecops",
+    "title": "Ciberseguridad, DevSecOps & Cloud Infrastructure",
+    "icon": "shield",
     "variant": "secondary",
+    "skills": [
+      "Security Testing",
+      "OWASP Top 10",
+      "ISO 27001 & Gestión Riesgos",
+      "Forense Digital",
+      "Docker & Contenedores",
+      "CI/CD con GitHub Actions",
+      "Segregación & Hardening de Redes",
+      "Linux & Bash",
+      "Hacking Ético"
+    ]
+  },
+  {
+    "id": "data-engineering-ai",
+    "title": "Bases de Datos, Data Science & Auditoría IA",
+    "icon": "database",
+    "variant": "neutral",
     "skills": [
       "PostgreSQL",
       "MySQL",
       "MongoDB",
       "SQLite",
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "PyTorch"
+      "Pandas & NumPy",
+      "Scikit-learn & PyTorch",
+      "GCI Data Science (UTokyo)",
+      "DS4A Data Analytics",
+      "Auditoría & Mitigación de Errores IA"
     ]
   },
   {
-    "id": "devops-infra",
-    "title": "DevOps, Nube & Herramientas",
-    "icon": "cloud_sync",
+    "id": "qa-tools",
+    "title": "QA, Testing Automatizado & Herramientas",
+    "icon": "bug_report",
     "variant": "neutral",
     "skills": [
-      "Docker",
-      "Git",
-      "Linux",
-      "Microsoft Azure",
-      "Redes",
-      "Ciberseguridad",
-      "SCRUM",
-      "Prompt Engineering",
-      "Clean Code",
-      "Unity",
-      "Ingeniería de Software"
+      "pytest & xUnit",
+      "QA Lifecycle & Benchmarking",
+      "Pruebas Funcionales y de Rendimiento",
+      "Unity & Game Testing",
+      "Git & GitHub",
+      "Sistemas & Redes LAN"
     ]
   }
 ]

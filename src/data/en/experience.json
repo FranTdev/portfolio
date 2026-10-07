@@ -1,50 +1,50 @@
 [
   {
     "id": "exp-1",
-    "role": "Testing & Software Solutions Lead",
-    "company": "Cenigraf Game Research Group - SENA",
-    "period": "03/2023 - Present",
-    "description": "Leadership of the testing and game testing team. Design and execution of software test suites, custom programming solutions for prototype optimization, and collaboration on code architecture and version control.",
-    "skills": ["Software Testing", "Game Testing", "QA & Debugging", "Software Architecture", "Unity", "Version Control"]
+    "role": "Lead QA & Security Tester",
+    "company": "SENA Research Seedbed (Cenigraf Game Group)",
+    "period": "03/2026 - Present",
+    "description": "Security Testing: Conducting vulnerability assessments and security testing on web game components to identify and mitigate OWASP Top 10 risks like XSS or Injection. Quality Assurance (QA): Overseeing the QA lifecycle, ensuring software reliability through rigorous functional and performance testing. Documentation: Managing technical documentation and risk assessment reports to align with research and security standards.",
+    "skills": ["Security Testing", "OWASP Top 10", "Vulnerability Assessment", "Quality Assurance (QA)", "Technical Documentation", "Unity", "Version Control"]
   },
   {
     "id": "exp-2",
-    "role": "IT Support & Infrastructure",
+    "role": "IT Support & Network Infrastructure",
     "company": "Hotel Derroches",
     "period": "2021 - 2024",
-    "description": "Development and deployment of custom inventory software using Python and SQL. Configuration, administration, and network segmentation for secure connectivity and stable infrastructure.",
-    "skills": ["Python", "SQL", "Networking & Connectivity", "IT Security", "Inventory Management"]
+    "description": "Maintaining stable and secure technological infrastructure, focusing on network reliability and endpoint protection. Network Management: Managed network configuration and segregation to ensure secure and stable connectivity across departments. Software Oversight: Developed custom inventory management software using Python & SQL and oversaw software deployment cycles.",
+    "skills": ["Python", "SQL", "Network Segregation", "Endpoint Protection", "IT Security", "Financial Analysis", "Inventory Management"]
   },
   {
     "id": "exp-3",
-    "role": "Programming Instructor",
+    "role": "Programming & Web Security Instructor",
     "company": "Compusistemas",
-    "period": "2022 - 2022",
-    "description": "Training in Web Development fundamentals (HTML, JavaScript, Python) and Web Security. Design of hands-on exercises, pedagogical materials, and evaluation rubrics.",
-    "skills": ["HTML/CSS", "JavaScript", "Python", "Web Security", "Technical Leadership"]
+    "period": "01/2022 - 07/2022",
+    "description": "Led technical training for groups of 20+ students, focusing on the software development lifecycle (SDLC) and secure coding practices. Technical Training: Delivered instruction in HTML, CSS, JavaScript, and Python. Web Security: Developed and taught a specialized module on Web Security fundamentals and common vulnerability mitigation.",
+    "skills": ["Python", "Web Security", "Secure SDLC", "JavaScript", "HTML/CSS", "Technical Leadership"]
   },
   {
     "id": "edu-1",
-    "role": "B.S. in Computer Engineering",
-    "company": "UAO (Universidad Autónoma de Occidente)",
-    "period": "In Progress (Expected 2027)",
-    "description": "Academic degree in software engineering, system architecture, database design, and data science.",
-    "skills": ["Computer Engineering", "Data Structures", "Distributed Systems"]
+    "role": "B.S. in Systems Engineering (Cybersecurity & Architecture)",
+    "company": "Universidad Autónoma de Occidente (UAO)",
+    "period": "10/2021 - 10/2026 (In Progress - 9th Semester | GPA 4.2/5.0)",
+    "description": "Focused on Cybersecurity, Digital Forensics, and Secure Systems Architecture (90% Credits Completed). Coursework: Information Security (ISO 27001, risk management, cryptographic principles, defensive strategies), Digital Forensics (investigation methodologies, chain of custody, log analysis), Networking & Infrastructure hardening (TCP/IP protocols).",
+    "skills": ["Systems Engineering", "Cybersecurity", "Digital Forensics", "ISO 27001", "Network Hardening", "TCP/IP", "Log Analysis"]
   },
   {
     "id": "edu-2",
-    "role": "Associate Degree in Game Development & Systems Tech",
-    "company": "SENA",
-    "period": "SENA (2019 - Present)",
-    "description": "Associate Degree in Game Development (graduation in progress) and Systems Technician (2019).",
-    "skills": ["Game Development", "Unity", "Systems & Networking"]
+    "role": "Associate Degree in Game Dev & Computer Systems Technician",
+    "company": "SENA (Servicio Nacional de Aprendizaje)",
+    "period": "2017 - 2027",
+    "description": "Technologist in Video Game Development (2024 - 2027 | Awarded Academic Excellence, Teaching Assistant, SDLC Security Integration). Computer Systems Technician (2017 - 2019 | LAN network configuration, structured cabling, OS hardening).",
+    "skills": ["Game Development", "Unity", "SDLC Security Integration", "LAN Infrastructure", "OS Hardening"]
   },
   {
     "id": "cert-1",
-    "role": "Professional Certifications",
-    "company": "UTokyo • Google • Correlation One • Oracle / Alura",
-    "period": "Certified",
-    "description": "• GCI World April 2026 – Data Science — The University of Tokyo, Matsuo-Iwasawa Laboratory (August 2026 · Certification with passed final evaluation)\n• Google Cybersecurity Professional Certificate (Google / Coursera)\n• DS4A Data Analyst Fundamentals (Correlation One)\n• Oracle + Alura Backend Developer (Alura Latam)",
-    "skills": ["GCI Data Science", "Google Cybersecurity", "DS4A Data Analyst", "Oracle Backend Developer"]
+    "role": "Professional Licenses & Certifications",
+    "company": "Google • UTokyo • Correlation One • Oracle / Alura",
+    "period": "Official Certificates",
+    "description": "• Google Cybersecurity Professional Certificate (Google / Coursera: Python Automation, Detection & Response, Linux & SQL, Assets/Threats/Vulnerabilities, Networks, Risk Management)\n• GCI World April 2026 – Data Science & ML — The University of Tokyo (Matsuo-Iwasawa Lab, Aug 2026)\n• DS4A Data Analyst Fundamentals — Correlation One\n• Oracle Next Education (ONE) – Back-end Developer & Java / Spring Boot — Alura Latam",
+    "skills": ["Google Cybersecurity Professional", "GCI Data Science", "DS4A Data Analyst", "Oracle Backend Developer", "Python", "Linux & SQL"]
   }
 ]

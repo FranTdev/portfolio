@@ -1,8 +1,9 @@
 # Portafolio Profesional - Francisco S. Tabares U.
 
-**Ingeniero Informático | Backend Development & Data Engineering**
+**Backend Developer | Cloud Architect | Ciberseguridad | DevOps**
 
 Portafolio web modular, de alto rendimiento y desacoplado, construido con **Vite**, **Vanilla JavaScript** y **Tailwind CSS**. Diseñado para desplegarse limpiamente en **GitHub Pages** mediante integración continua con GitHub Actions.
+
 
 ---
 
