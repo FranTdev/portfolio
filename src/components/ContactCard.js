@@ -6,17 +6,17 @@ export function renderContactCard(profileData, uiData) {
         <div class="absolute -top-32 -right-32 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none"></div>
 
         <div class="w-16 h-16 bg-surface-container-highest rounded-2xl flex items-center justify-center text-primary shadow-inner z-10 border border-primary/20">
-          <span class="material-symbols-outlined text-[32px]">terminal</span>
+          <span class="material-symbols-outlined text-[32px]">shield_lock</span>
         </div>
 
         <div class="flex flex-col gap-4 z-10">
           <h2 class="font-headline-xl text-3xl md:text-4xl text-on-surface font-bold">${uiData.contact.title}</h2>
-          <p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto leading-relaxed">
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             ${profileData.bio}
           </p>
           <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-code-sm text-text-muted mt-1">
             <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">location_on</span>${profileData.location}</span>
-            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">call</span>${profileData.phone}</span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">mark_email_read</span>${profileData.phone}</span>
           </div>
         </div>
 
