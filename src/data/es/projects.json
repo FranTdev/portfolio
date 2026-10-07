@@ -1,49 +1,49 @@
 [
   {
     "id": "tinylm",
-    "title": "TinyLM — Microservicio Inferencia LLM",
-    "category": "IA & Backend",
-    "type": "mlops",
-    "icon": "psychology",
-    "description": "Microservicio de inferencia de IA local de alto rendimiento y bajo consumo de memoria (RAM estipulada ≤ 2 GB). Expone una API REST construida con FastAPI que ejecuta el modelo de lenguaje cuantizado Qwen2.5-1.5B-Instruct en formato GGUF mediante llama-cpp-python sobre contenedores Alpine Linux.",
+    "title": "TinyLM — Microservicio Local Inferencia LLM",
+    "category": "Backend & DevSecOps",
+    "type": "security",
+    "icon": "shield",
+    "description": "Microservicio de inferencia local de alto rendimiento y bajo consumo de memoria (RAM ≤ 2 GB). Expone una API REST con FastAPI que ejecuta Qwen2.5-1.5B en formato GGUF mediante llama-cpp-python sobre contenedores Alpine Linux con arquitectura de seguridad multietapa.",
     "highlights": [
-      "Arquitectura Docker multietapa sobre Linux Alpine para minimizar tamaño de imagen y superficie de ataque.",
-      "Endpoints optimizados para inferencia con sintaxis estándar estilo OpenAI (/v1/chat/completions) y check de salud (/health).",
-      "Estrategia de carga perezosa (lazy loading) e inyección idempotente de binarios .gguf desde Hugging Face."
+      "Arquitectura Docker multietapa sobre Linux Alpine con endurecimiento (hardening) para minimizar la superficie de ataque.",
+      "Endpoints optimizados para inferencia REST estilo OpenAI (/v1/chat/completions) y monitoreo de salud (/health).",
+      "Control estricto de memoria heap, carga perezosa de binarios e inyección idempotente de modelos."
     ],
-    "tags": ["Python 3.12", "FastAPI", "llama-cpp-python", "Qwen2.5 GGUF", "Docker", "Docker Compose", "Alpine Linux", "LLM Inference"],
+    "tags": ["Python 3.12", "FastAPI", "Docker Hardening", "Alpine Linux", "DevSecOps", "REST API", "Microservicios"],
     "repoUrl": "https://github.com/FranTdev/TinyLM",
     "docUrl": "https://github.com/FranTdev/TinyLM#readme"
   },
   {
     "id": "unity-2d-backend",
     "title": "Unity 2D Multiplayer .NET Backend Template",
-    "category": "Backend & Open Source",
-    "type": "mlops",
-    "icon": "sports_esports",
-    "description": "Boilerplate y arquitectura backend empresarial en C# y .NET 9 con SignalR para videojuegos 2D multijugador y entornos virtuales espaciales en Unity. Gestiona presencia, movimiento y mensajería por proximidad en tiempo real.",
+    "category": "Backend & Cloud",
+    "type": "backend",
+    "icon": "dns",
+    "description": "Arquitectura backend empresarial en C# y .NET 9 con SignalR y WebSockets para videojuegos 2D y entornos virtuales espaciales en Unity. Gestiona presencia en tiempo real, movimiento y salas con baja latencia.",
     "highlights": [
-      "Sincronización en tiempo real vía WebSockets/SignalR con soporte para agrupación de clientes en salas espaciales (Rooms).",
-      "Scripts de automatización multiplataforma para extraer el cliente SignalR en .NET Standard 2.1 directamente a la suite de Unity.",
-      "Diseño estructurado con Clean Architecture, EF Core, soporte de Redis Backplane y contenerización completa con Docker."
+      "Sincronización en tiempo real vía WebSockets/SignalR con agrupación de clientes en salas espaciales (Rooms).",
+      "Diseño en capas estructurado bajo Clean Architecture, EF Core, Redis Backplane y contenerización en Docker.",
+      "Integración de prácticas de código seguro y automatización multiplataforma para clientes .NET Standard 2.1."
     ],
-    "tags": ["C# 13", ".NET 9", "SignalR", "ASP.NET Core", "Clean Architecture", "Docker", "EF Core", "Unity 6.3 LTS", "WebSockets"],
+    "tags": ["C# 13", ".NET 9", "SignalR", "Clean Architecture", "Docker", "Redis", "EF Core", "WebSockets"],
     "repoUrl": "https://github.com/FranTdev/Unity2DBackend",
     "docUrl": "https://github.com/FranTdev/Unity2DBackend#readme"
   },
   {
     "id": "todo-api-fastapi",
-    "title": "RESTful Task API (Clean Architecture)",
-    "category": "Backend & Open Source",
-    "type": "mlops",
-    "icon": "task_alt",
-    "description": "API RESTful contenerizada para la gestión de tareas basada en FastAPI y Python 3.12, estructurada bajo principios de Clean Architecture y Domain-Driven Design (DDD) para un desacoplamiento total de componentes.",
+    "title": "RESTful Task API (Clean Arch & Security Hardened)",
+    "category": "Ciberseguridad & DevSecOps",
+    "type": "security",
+    "icon": "verified_user",
+    "description": "API RESTful contenerizada para la gestión segura de tareas construida con FastAPI y Python 3.12. Estructurada bajo Clean Architecture y Domain-Driven Design (DDD) con protección contra vulnerabilidades comunes.",
     "highlights": [
-      "Diseño en capas de Clean Architecture (Domain, Application, Infrastructure y API Presentation Layer).",
-      "Modelado de bases de datos relacionales estructuradas con SQLModel (SQLAlchemy + Pydantic) y persistencia SQLite/PostgreSQL.",
-      "Suite automatizada de pruebas unitarias y de integración con pytest y orquestación reproducible mediante Docker Compose."
+      "Diseño desacoplado en capas de Clean Architecture (Domain, Application, Infrastructure, API Presentation).",
+      "Modelado de bases relacionales con SQLModel (SQLAlchemy + Pydantic) y mitigación de inyecciones SQL (OWASP).",
+      "Suite automatizada de pruebas unitarias y de integración con pytest y orquestación reproducible en Docker Compose."
     ],
-    "tags": ["Python 3.12", "FastAPI", "SQLModel", "Clean Architecture", "Docker", "pytest", "Domain-Driven Design"],
+    "tags": ["Python 3.12", "FastAPI", "OWASP Hardening", "Clean Architecture", "SQLModel", "Docker", "pytest"],
     "repoUrl": "https://github.com/FranTdev/todo-api-fastapi",
     "docUrl": "https://github.com/FranTdev/todo-api-fastapi#readme"
   },
@@ -51,31 +51,31 @@
     "id": "algorithms-dotnet",
     "title": "Sorting Algorithms & Memory Benchmarks (.NET 10)",
     "category": "Backend & Open Source",
-    "type": "mlops",
+    "type": "backend",
     "icon": "speed",
-    "description": "Librería modular de alto rendimiento en C# (.NET 10) para algoritmos de ordenamiento fundamental y estructuras de datos. Diseñada con Clean Architecture, restricciones genéricas, pruebas unitarias xUnit y perfilado de memoria con BenchmarkDotNet.",
+    "description": "Librería modular de alto rendimiento en C# (.NET 10) para algoritmos fundamentales de ordenamiento y estructuras de datos. Diseñada con Clean Architecture, perfilado de memoria con BenchmarkDotNet y pruebas unitarias con xUnit.",
     "highlights": [
       "Implementación desacoplada y genérica de QuickSort, MergeSort, HeapSort, InsertionSort, TimSort y BubbleSort.",
-      "Perfilado riguroso de tiempo de CPU y asignación de memoria heap en microsegundos utilizando BenchmarkDotNet.",
-      "Suite exhaustiva de pruebas unitarias parametrizadas con xUnit y aserciones expresivas con FluentAssertions."
+      "Perfilado de CPU y asignación de memoria heap en microsegundos utilizando BenchmarkDotNet.",
+      "Pruebas unitarias parametrizadas con xUnit y FluentAssertions para verificación de corrección."
     ],
-    "tags": ["C# 13", ".NET 10", "Clean Architecture", "xUnit", "BenchmarkDotNet", "Algorithms", "Data Structures"],
+    "tags": ["C# 13", ".NET 10", "Clean Architecture", "xUnit", "BenchmarkDotNet", "Algoritmos", "Performance"],
     "repoUrl": "https://github.com/FranTdev/Algorithms",
     "docUrl": "https://github.com/FranTdev/Algorithms#readme"
   },
   {
     "id": "websocket-server",
     "title": "Low-Latency WebSocket Server Engine",
-    "category": "Backend & Open Source",
-    "type": "mlops",
+    "category": "Backend & Cloud",
+    "type": "backend",
     "icon": "hub",
-    "description": "Motor de comunicaciones WebSocket bidireccional en tiempo real y alta concurrencia escrito en C# y .NET Core, optimizado para transmisión continua de eventos y baja latencia.",
+    "description": "Motor de comunicaciones WebSocket bidireccional en tiempo real y alta concurrencia escrito en C# y .NET Core, optimizado para transmisión continua de eventos, baja latencia y alta estabilidad.",
     "highlights": [
       "Gestión asíncrona de alto rendimiento para conexiones concurrentes y ciclo de vida de sockets.",
       "Protocolo de mensajería ligero para minimizar sobrecarga de CPU y consumo de ancho de banda.",
-      "Arquitectura modular lista para integrarse como servicio backend en sistemas distribuidos."
+      "Arquitectura modular lista para integrarse como servicio backend seguro en sistemas distribuidos."
     ],
-    "tags": ["C# 13", ".NET 9", "WebSockets", "Async/Await", "Networking", "Clean Architecture"],
+    "tags": ["C# 13", ".NET 9", "WebSockets", "Async/Await", "Redes & Conectividad", "Clean Architecture"],
     "repoUrl": "https://github.com/FranTdev/WebSocketServer",
     "docUrl": "https://github.com/FranTdev/WebSocketServer#readme"
   }

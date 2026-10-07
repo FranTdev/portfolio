@@ -1,49 +1,49 @@
 [
   {
     "id": "tinylm",
-    "title": "TinyLM — Local LLM Inference Service",
-    "category": "IA & Backend",
-    "type": "mlops",
-    "icon": "psychology",
-    "description": "High-performance, low-memory local AI inference microservice (RAM capped at ≤ 2 GB). Exposes an OpenAPI-compliant REST API built with FastAPI executing quantized LLM models (Qwen2.5-1.5B GGUF) via llama-cpp-python on Alpine Linux containers.",
+    "title": "TinyLM — Local LLM Inference Microservice",
+    "category": "Backend & DevSecOps",
+    "type": "security",
+    "icon": "shield",
+    "description": "High-performance local LLM inference microservice optimized for constrained memory (RAM ≤ 2 GB). Exposes a FastAPI REST API executing Qwen2.5-1.5B GGUF via llama-cpp-python on Alpine Linux containers with a multi-stage security design.",
     "highlights": [
-      "Multi-stage Docker architecture on Alpine Linux minimizing image size and attack surface.",
-      "Inference endpoints compliant with standard OpenAI format (/v1/chat/completions) and health check (/health).",
-      "Lazy loading strategy and idempotent GGUF model binary ingestion from Hugging Face."
+      "Multi-stage Docker architecture on Alpine Linux with container hardening to minimize attack surface.",
+      "Optimized OpenAI-compatible REST inference endpoints (/v1/chat/completions) and health probes (/health).",
+      "Strict heap memory control, lazy loading strategies, and idempotent model deployment."
     ],
-    "tags": ["Python 3.12", "FastAPI", "llama-cpp-python", "Qwen2.5 GGUF", "Docker", "Docker Compose", "Alpine Linux", "LLM Inference"],
+    "tags": ["Python 3.12", "FastAPI", "Docker Hardening", "Alpine Linux", "DevSecOps", "REST API", "Microservices"],
     "repoUrl": "https://github.com/FranTdev/TinyLM",
     "docUrl": "https://github.com/FranTdev/TinyLM#readme"
   },
   {
     "id": "unity-2d-backend",
-    "title": "Unity 2D Multiplayer .NET Backend Template",
-    "category": "Backend & Open Source",
-    "type": "mlops",
-    "icon": "sports_esports",
-    "description": "Enterprise C# & .NET 9 boilerplate architecture with SignalR for 2D multiplayer games and spatial virtual environments in Unity. Handles presence, movement, and spatial messaging in real time.",
+    "title": "Unity 2D Multiplayer .NET Backend Architecture",
+    "category": "Backend & Cloud",
+    "type": "backend",
+    "icon": "dns",
+    "description": "Enterprise C# and .NET 9 backend boilerplate with SignalR and WebSockets for 2D multiplayer games and virtual environments in Unity. Handles presence, movement, and spatial rooms with low latency.",
     "highlights": [
-      "Real-time WebSocket synchronization using SignalR with spatial room grouping support.",
-      "Cross-platform automation scripts extracting official SignalR .NET Standard 2.1 client DLLs into Unity.",
-      "Architected with Clean Architecture, EF Core, Redis Backplane support, and full Docker containerization."
+      "Real-time WebSocket/SignalR synchronization supporting client grouping in spatial rooms.",
+      "Layered Clean Architecture, EF Core, Redis Backplane, and full Docker containerization.",
+      "Secure coding practices integration and cross-platform automation for .NET Standard 2.1 clients."
     ],
-    "tags": ["C# 13", ".NET 9", "SignalR", "ASP.NET Core", "Clean Architecture", "Docker", "EF Core", "Unity 6.3 LTS", "WebSockets"],
+    "tags": ["C# 13", ".NET 9", "SignalR", "Clean Architecture", "Docker", "Redis", "EF Core", "WebSockets"],
     "repoUrl": "https://github.com/FranTdev/Unity2DBackend",
     "docUrl": "https://github.com/FranTdev/Unity2DBackend#readme"
   },
   {
     "id": "todo-api-fastapi",
-    "title": "RESTful Task API (Clean Architecture)",
-    "category": "Backend & Open Source",
-    "type": "mlops",
-    "icon": "task_alt",
-    "description": "Containerized RESTful task management API built with FastAPI and Python 3.12, architected around Clean Architecture and Domain-Driven Design (DDD) principles for strict decoupling.",
+    "title": "RESTful Task API (Clean Arch & Security Hardened)",
+    "category": "Cybersecurity & DevSecOps",
+    "type": "security",
+    "icon": "verified_user",
+    "description": "Containerized RESTful Task API built with FastAPI and Python 3.12. Structured under Clean Architecture and Domain-Driven Design (DDD) with protection against common security vulnerabilities.",
     "highlights": [
-      "Four-layer Clean Architecture design (Domain, Application, Infrastructure, API Presentation Layer).",
-      "Relational database modeling with SQLModel (SQLAlchemy + Pydantic) and SQLite/PostgreSQL persistence.",
-      "Automated unit & integration test suites using pytest and reproducible Docker Compose orchestration."
+      "Decoupled Clean Architecture layers (Domain, Application, Infrastructure, API Presentation).",
+      "Relational database modeling with SQLModel (SQLAlchemy + Pydantic) and OWASP SQL injection mitigation.",
+      "Automated unit and integration testing suite with pytest and reproducible Docker Compose orchestration."
     ],
-    "tags": ["Python 3.12", "FastAPI", "SQLModel", "Clean Architecture", "Docker", "pytest", "Domain-Driven Design"],
+    "tags": ["Python 3.12", "FastAPI", "OWASP Hardening", "Clean Architecture", "SQLModel", "Docker", "pytest"],
     "repoUrl": "https://github.com/FranTdev/todo-api-fastapi",
     "docUrl": "https://github.com/FranTdev/todo-api-fastapi#readme"
   },
@@ -51,29 +51,29 @@
     "id": "algorithms-dotnet",
     "title": "Sorting Algorithms & Memory Benchmarks (.NET 10)",
     "category": "Backend & Open Source",
-    "type": "mlops",
+    "type": "backend",
     "icon": "speed",
-    "description": "High-performance modular C# library in .NET 10 implementing fundamental sorting algorithms and data structures. Architected with Clean Architecture, generic constraints, xUnit tests, and BenchmarkDotNet profiling.",
+    "description": "High-performance modular C# (.NET 10) library for fundamental sorting algorithms and data structures. Built with Clean Architecture, BenchmarkDotNet memory profiling, and xUnit test suites.",
     "highlights": [
       "Decoupled generic implementations of QuickSort, MergeSort, HeapSort, InsertionSort, TimSort, and BubbleSort.",
-      "CPU runtime profiling and microsecond-level memory allocation benchmarks using BenchmarkDotNet.",
-      "Exhaustive parameterized unit testing suite with xUnit and FluentAssertions."
+      "CPU timing and microsecond heap memory allocation profiling via BenchmarkDotNet.",
+      "Parameterized unit test suite with xUnit and expressive assertions using FluentAssertions."
     ],
-    "tags": ["C# 13", ".NET 10", "Clean Architecture", "xUnit", "BenchmarkDotNet", "Algorithms", "Data Structures"],
+    "tags": ["C# 13", ".NET 10", "Clean Architecture", "xUnit", "BenchmarkDotNet", "Algorithms", "Performance"],
     "repoUrl": "https://github.com/FranTdev/Algorithms",
     "docUrl": "https://github.com/FranTdev/Algorithms#readme"
   },
   {
     "id": "websocket-server",
     "title": "Low-Latency WebSocket Server Engine",
-    "category": "Backend & Open Source",
-    "type": "mlops",
+    "category": "Backend & Cloud",
+    "type": "backend",
     "icon": "hub",
-    "description": "High-concurrency, low-latency bidirectional real-time WebSocket communication engine built with C# and .NET, tailored for event streaming and rapid data exchange.",
+    "description": "Real-time, high-concurrency bidirectional WebSocket engine written in C# and .NET Core, optimized for continuous event streaming, low latency, and high stability.",
     "highlights": [
-      "Asynchronous high-throughput lifecycle management for concurrent socket connections.",
-      "Lightweight payload messaging protocol to minimize CPU overhead and network bandwidth.",
-      "Modular architecture designed for direct integration into distributed backend microservices."
+      "High-performance asynchronous management of concurrent connections and socket lifecycle.",
+      "Lightweight messaging protocol to minimize CPU overhead and network bandwidth consumption.",
+      "Modular architecture ready for integration as a secure backend service in distributed systems."
     ],
     "tags": ["C# 13", ".NET 9", "WebSockets", "Async/Await", "Networking", "Clean Architecture"],
     "repoUrl": "https://github.com/FranTdev/WebSocketServer",

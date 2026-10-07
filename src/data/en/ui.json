@@ -8,21 +8,21 @@
   "hero": {
     "exploreProjects": "Explore Projects",
     "initiateConnection": "Initiate Connection",
-    "sysinfoCmd": "> sysinfo --full",
-    "statusOperational": "STATUS: OPERATIONAL",
+    "sysinfoCmd": "> sysinfo --security",
+    "statusOperational": "STATUS: SECURITY HARDENED",
     "health": "100% HEALTH"
   },
   "skills": {
-    "title": "Technical Arsenal",
-    "subtitle": ">> system.skills.load_matrix()"
+    "title": "Technical Arsenal & Cybersecurity",
+    "subtitle": ">> system.security.load_matrix()"
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "Open-source projects and backend engineering developments.",
+    "subtitle": "Backend engineering, cybersecurity, cloud infrastructure, and open-source developments.",
     "filters": {
       "all": "All",
-      "backend": "Backend",
-      "ai": "AI & MLOps",
+      "backend": "Backend & Cloud",
+      "security": "Cybersecurity & DevSecOps",
       "openSource": "Open Source"
     },
     "viewRepo": "View Repository",
@@ -31,16 +31,16 @@
   },
   "experience": {
     "title": "Experience, Education & Certifications",
-    "subtitle": "Work history, academic background, and professional achievements."
+    "subtitle": "Work history, cybersecurity academic background, and professional achievements."
   },
   "contact": {
-    "title": "Initiate Connection",
+    "title": "Initiate Secure Connection",
     "copied": "Copied!",
     "copyEmail": "Copy email"
   },
   "footer": {
     "hosted": "Hosted on GitHub Pages • Built with Vite & Tailwind CSS",
-    "rights": "All systems operational."
+    "rights": "All systems operational and secured."
   },
   "tinylm": {
     "title": "Francisco AI — Live Chat",
@@ -50,9 +50,9 @@
     "statusOffline": "NO CONNECTION",
     "statusStreaming": "GENERATING...",
     "loading": {
-      "connecting": "Initializing agent connection...",
+      "connecting": "Initializing secure agent connection...",
       "step0": "Initializing network protocol...",
-      "step1": "Establishing secure session...",
+      "step1": "Establishing TLS secure session...",
       "step2": "Loading agent context...",
       "step3": "Warming up model...",
       "step4": "Connected! Preparing response..."
@@ -65,7 +65,7 @@
     },
     "chat": {
       "welcome": "Hi, I'm Francisco's AI agent. How can I help you?",
-      "placeholder": "Type your question...",
+      "placeholder": "Type your question about backend, cybersecurity, or projects...",
       "you": "You",
       "poweredBy": "Francisco Tabares — AI Agent",
       "errorResponse": "[Error getting response. Please try again.]",
